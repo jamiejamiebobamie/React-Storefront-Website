@@ -1,4 +1,4 @@
-# Pinterest Labels
+# EasyShop
 
 This is a mockup of 'storefront' website built using **React.js**. The site arose from a class assignment for my Frontend Web class that taught us how to use the Javascript functions of map, filter, and reduce.
 
