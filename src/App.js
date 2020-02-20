@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Shoppingcart from './Shoppingcart.js';
-import Shopping from './Shopping.js';
+import BrowseItems from './BrowseItems.js';
 import Cartpricebar from './Cartpricebar.js'
 
 class App extends Component {
@@ -28,20 +28,38 @@ class App extends Component {
     }
 
   render() {
-    let pageContent
-    if (this.state.ShoppingCartToggled){
-        pageContent = <Shoppingcart removeItemFromCart={this.removeItemFromCart} cartItems={this.state.cartItems}/>
-    }else{
-        pageContent = <Shopping addItemToCart={this.addItemToCart} currentCategories={this.state.currentCategories}/>
+    let pageContent;
+
+    if (this.state.ShoppingCartToggled) {
+        pageContent = < Shoppingcart
+                        removeItemFromCart={this.removeItemFromCart}
+                        cartItems={this.state.cartItems}
+                        />
+    } else {
+        pageContent = < BrowseItems
+                        addItemToCart={this.addItemToCart}
+                        currentCategories={this.state.currentCategories}
+                        />
     }
+
         return (
           <div className="App">
               <div className="fauxNavbar">
+
                   <div className="title">
                     <h1 className="display">EasyShop</h1>
-                    <button className="toggleCart" onClick={ () => { this.setState( {ShoppingCartToggled: !this.state.ShoppingCartToggled} ) } }> { (this.state.ShoppingCartToggled ? 'Shop' :("My Cart ("+this.state.cartItems.length+")") )}</button>
+                    <button className="toggleCart"
+                            onClick = { () =>
+                                { this.setState( {ShoppingCartToggled:
+                                !this.state.ShoppingCartToggled} ) } }>
+                                { (this.state.ShoppingCartToggled ? 'Shop' :
+                                ("My Cart ("+this.state.cartItems.length+")")) }
+                    </button>
                   </div>
-                  {(this.state.cartItems < 1 ? <Cartpricebar cartItems={[{price:0.00}]} /> : <Cartpricebar cartItems={this.state.cartItems} />)}
+
+                  { (this.state.cartItems < 1 ? <Cartpricebar cartItems = {
+                                                    [ {price:0.00} ] } />
+                        : < Cartpricebar cartItems={this.state.cartItems} /> ) }
               </div>
                 <ol className="container">
                     {pageContent}

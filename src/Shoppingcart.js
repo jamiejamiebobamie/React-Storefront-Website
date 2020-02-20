@@ -6,14 +6,17 @@ import './Shoppingcart.css'
 function ShoppingCart(props){
     const items =  (
         <div>
-            <Cartproducts removeItemFromCart={props.removeItemFromCart} cartItems={props.cartItems} />
+            <Cartproducts
+                removeItemFromCart={props.removeItemFromCart}
+                cartItems={props.cartItems}
+            />
         </div>
     )
 
     const noItems = (
         <div>
             <img className="cartPicture" src="./imgs/cart_icon.png"alt=""/>
-            <h1 className="cartMessage">no items in cart</h1>
+            <h1 className="cartMessage" >no items in cart</h1>
         </div>
     )
 
@@ -26,5 +29,3 @@ function ShoppingCart(props){
 }
 
 export default ShoppingCart
-
-        // {(props.cartItems.length>0 ? <Pricebar currentCategories={props.cartItems}/>:"")}

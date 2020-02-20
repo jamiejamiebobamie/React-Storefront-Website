@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Shopping.css';
+import './BrowseItems.css';
 import Products from './Products.js'
 import inventory, { categories } from './inventory'
 
-class Shopping extends Component {
+class BrowseItems extends Component {
 
     constructor(props) {
         super(props);
@@ -98,4 +98,4 @@ class Shopping extends Component {
 }
 // {(this.state.currentCategories!=null ? <Pricebar currentCategories={this.state.currentCategories}/>:"")}
 // None (0)
-export default Shopping
+export default BrowseItems

@@ -4,10 +4,10 @@ import './Cartpricebar.css'
 
 function Cartpricebar(props){
     let price = 0;
+    const linkToMyGithubRepo =
+        "https://github.com/jamiejamiebobamie/React-Storefront-Website";
 
-    function add(number1,number2) {
-        return number1+number2
-    }
+    function add(number1,number2) { return number1+number2 }
 
     let productPricesArray = []
 
@@ -18,10 +18,10 @@ function Cartpricebar(props){
     price = productPricesArray.reduce(add)
     price = price.toString()
     price = price.split(".")
+
     if (price.length > 1){
-        if (price[1].length < 2 ){
-            price[1] = price[1]+ '0'
-        }
+        if (price[1].length < 2 )
+        { price[1] = price[1]+ '0' }
         price = price[0] + "." + price[1].slice(0,2)
     } else {
         price = price[0] + ".00"
@@ -31,14 +31,14 @@ function Cartpricebar(props){
         <div className="Pricebar">
             <h3 className="speechBubble">checkout?</h3>
             <h3 className="price">${price}</h3>
-            <a className="GITHUB" href="https://github.com/jamiejamiebobamie/react-product-list">
-                <img className="cashierImage1" width="276" height="200" src="./imgs/checkout_iconFront.png" alt="" />
+            <a className="GITHUB" href={linkToMyGithubRepo}>
+                <img className="cashierImage1"
+                     width="276" height="200"
+                     src="./imgs/checkout_iconFront.png" alt=""
+                />
             </a>
         </div>
     )
 }
 
 export default Cartpricebar
-
-// <img className="cashierImage2" width="276" height="200" src="./imgs/checkout_iconFront.png" alt="" />
-// 
