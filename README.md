@@ -22,3 +22,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Note
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![alt text](./public/imgs/icon_jar.png)
