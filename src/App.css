@@ -1,0 +1,121 @@
+.App {
+ margin: auto;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+.display{
+    height: 100px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+h1{
+    justify-content: center;
+    align-self: flex-end;
+    color:#F7C331;
+    font-family: 'Nunito', sans-serif;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #F7882F;
+    border-color: transparent;
+    border-radius: 1.5px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+button:hover{
+    color:white;
+}
+
+.toggleCart{
+    margin-left: 150px;
+    /* margin-right: 90px; */
+}
+
+.fauxNavbar{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0px;
+    /* align-self: center; */
+    /* flex-wrap: wrap; */
+}
+
+.toggleCategories{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* .selected-button{
+    opacity: .9;
+    border-color: #F7C331;
+} */
+
+@media only screen and (min-width: 920px) {
+    .categories{
+        height: 250px;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .display{
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    .toggleCart{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cashier{
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* @media only screen and (max-width: 900px) {
+    .categories{
+        background-color: blue;
+        margin-bottom: 30px;
+    }
+
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* margin-top: -100px; */
+    margin-bottom: -20px;
+}
+
+.item-text{
+    margin: 10px
+}

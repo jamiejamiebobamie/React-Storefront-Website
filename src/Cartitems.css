@@ -1,0 +1,122 @@
+.Cartitems{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6B7A8F;
+    margin: 20px;
+    align-items: flex-start;
+    padding: 30px;
+    /* border-radius: 2px; */
+    border-radius: 10px;
+
+    width: 300px;
+    height: 200px;
+}
+
+/* padding: 5px;
+margin: 10px;
+width: 100px;
+height: 30px;
+background-color: #F7882F;
+border-color: transparent;
+border-radius: 1.5px; */
+
+.buyItem{
+    position: absolute;
+    z-index: 2;
+    color:#F7C331;
+    border-radius: 10px;
+
+    /* color: #F7882F; */
+    text-align: center;
+    line-height: 95px;
+    font-size: 70px;
+    opacity: 0;
+    margin-top: 29px;
+    margin-left: -32px;
+    width: 300px;
+    height: 200px;
+    background-color: #6B7A8F;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.Cartitems:hover .buyItem{
+    opacity: 1;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+/* .Items:hover .buyItem2{
+    opacity: 1;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+.Items:hover .cartIcon{
+    opacity: .8;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+} */
+
+.item-text-name{
+    font-size: 30px;
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+.item-text-price{
+    font-size: 20px;
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* color: white; */
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.item-text-category{
+    font-size: 15px;
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+.ItemsInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.itemImg{
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 700px){
+    .Cartitems{
+        flex: 1 0 70%;
+    }
+
+    .buyItem{
+        flex: 1 0 70%;
+    }
+
+}

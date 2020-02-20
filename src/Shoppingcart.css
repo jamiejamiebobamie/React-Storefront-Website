@@ -1,0 +1,40 @@
+.cartPicture{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 60px;
+    margin-top: 110px;
+    margin-bottom: auto;
+}
+
+.cartHeader{
+    margin-top: auto;
+    margin-left: 5vw;
+    font-size: 70px;
+}
+
+.cartMessage{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+.ShoppingCart{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen only and (min-width:600px){
+
+    .cartHeader{
+        margin-top: auto;
+        margin-left: 5vw;
+        font-size: 70px;
+    }
+
+}
