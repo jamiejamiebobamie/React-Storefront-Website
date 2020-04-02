@@ -4,7 +4,7 @@ This is a mockup of a 'storefront' website built using **React.js**. The site ar
 
 The product names and their descriptions are all enjoyable nonsense created by the magical whimsy of our Frontend Web professor!
 
-Please view the live site here: https://jamiejamiebobamie.github.io/easy-shop/
+Please view the live site [here](https://jamiejamiebobamie.github.io/easy-shop/) .
 
 ## Built With
 
